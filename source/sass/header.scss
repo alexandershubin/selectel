@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.header__logo {
+  width: 40%;
+}
+
+.main-nav {
+  width: 56%;
+  padding: 0 6px;
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+  color: #8391B2;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #8391B2;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -20px;
+  }
+
+  &--tel {
+    &::before {
+      content: url('../img/telefone.svg');
+    }
+  }
+
+  &--mail {
+    &::before {
+      content: url('../img/mail.svg');
+    }
+  }
+
+  &--telegram {
+    &::before {
+      content: url('../img/telegram.svg');
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .main-nav__link--hidden {
+    display: none;
+  }
+
+  .main-nav {
+    max-width: 100px;
+  }
+}

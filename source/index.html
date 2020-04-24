@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Тестовое задание Selectel" />
+  <title>Тестовое задание Selectel</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+  <div class="preloader">
+    <svg class="preloader__image" width="68" height="68" xmlns="http://www.w3.org/2000/svg" stroke="#689BFF">
+      <g transform="translate(4 4)" stroke-width="8" fill="none" fill-rule="evenodd">
+        <circle stroke-opacity=".3" cx="30" cy="30" r="30" />
+        <path d="M60 30c0-9.94-8.06-30-30-30">
+          <animateTransform attributeName="transform" type="rotate" from="0 30 30" to="360 30 30" dur="1s"
+            repeatCount="indefinite" />
+        </path>
+      </g>
+    </svg>
+  </div>
+
+  <header class="header container">
+    <div class="header__logo">
+      <a href="https://selectel.ru/">
+        <img src="img/logo.png" alt="logo" width="112" height="24">
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--tel" href="tel:+7(800)555-06-75" target="_blank" aria-label="tel">
+            <span class="main-nav__link main-nav__link--hidden">+7 (800) 555-06-75</span>
+          </a>
+
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--mail" href="mailto:sales@selectel.ru" target="_blank"
+            aria-label="mail">
+            <span class="main-nav__link main-nav__link--hidden">Написать в почту</span>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--telegram" href="https://t.me/Selectel" target="_blank">
+            <span class="main-nav__link main-nav__link--hidden">Написать в Telegram</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="server-subheader">
+    <div class="server-subheader__content container">
+      <div class="server-subheader__txt">
+        <h2 class="server-subheader__h2">Надежные серверы для проектов любой сложности</h2>
+        <p class="server-subheader__description">Выделенный сервер — это аренда сервера под задачи вашего проекта с
+          возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.</p>
+        <button class="server-subheader__button button">Готовые серверы</button>
+      </div>
+
+      <div class="server-subheader__img-wrapper">
+        <img src="img/image.png" alt="image" width="380" height="363">
+      </div>
+    </div>
+  </section>
+
+  <section class="configuration container">
+    <div class="configuration__content">
+      <h2 class="configuration__h2">Доступные конфигурации</h2>
+      <div class="configuration__form">
+        <form class="form" action="#" method="post" oninput="count.value=cores.value" enctype="multipart/form-data">
+          <ul class="form__list">
+            <li class="form__item form__item--range">
+              <label for="cores">vCPU</label>
+              <div class="output">
+                <input class="form__slider" type="range" id="cores" name="cores" min="2" max="12" step="2" value="6">
+
+                <div class="output__count">
+                  <span class="output__number">2</span>
+                  <!-- Область для вывода значения -->
+                  <div class="output__wrap">
+                    <output name="count">6</output>
+                    <span class="output__cores">ядер</span>
+                  </div>
+                  <span class="output__number">12</span>
+                </div>
+              </div>
+            </li>
+            <li class="form__item form__item--checkbox">
+              <input data-filter="gpu" class="form__item form__item--one" type="checkbox" name="setka" id="filter-one">
+              <label for="filter-one">GPU</label>
+            </li>
+
+            <li class="form__item form__item--checkbox">
+              <input data-filter="raid" class="form__item form__item--two" type="checkbox" name="setka" id="filter-two">
+              <label for="filter-two">RAID</label>
+            </li>
+
+            <li class="form__item form__item--checkbox">
+              <input data-filter="ssd" class="form__item form__item--three" type="checkbox" name="setka"
+                id="filter-three">
+              <label for="filter-three">SSD</label>
+            </li>
+          </ul>
+        </form>
+
+        <p class="configuration__description">Performance Line</p>
+        <ul class="product">
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="img/logo.png" alt="logo" width="112" height="24">
+          <ul class="footer__social">
+            <li class="footer__link">
+              <a href="#">
+               <svg width="22" height="23" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                   d="M8.01123 10.2687C9.31886 10.2687 10.3789 9.24153 10.3789 7.9744C10.3789 6.70727 9.31886 5.68005 8.01123 5.68005C6.7036 5.68005 5.64355 6.70727 5.64355 7.9744C5.64355 9.24153 6.7036 10.2687 8.01123 10.2687Z"
+                   fill="#8391B2" />
+                 <path
+                   d="M11.6761 8.1025C11.6761 10.0636 10.0354 11.6531 8.01142 11.6531C5.98748 11.6531 4.34672 10.0636 4.34672 8.1025C4.34672 7.75108 4.39976 7.4116 4.49796 7.09094H3.41504V12.0713C3.41504 12.3293 3.62586 12.5399 3.88366 12.5399H12.0938C12.3518 12.5399 12.5628 12.3293 12.5628 12.0713V7.09094H11.5249C11.6229 7.4116 11.6761 7.75108 11.6761 8.1025Z"
+                   fill="#8391B2" />
+                 <path
+                   d="M10.6937 5.74691H12.0262C12.3182 5.74691 12.5569 5.50826 12.5569 5.21625V3.94574C12.5569 3.65357 12.3182 3.41492 12.0262 3.41492H10.6937C10.4015 3.41492 10.1628 3.65357 10.1628 3.94574V5.21625C10.1627 5.50809 10.4015 5.74691 10.6937 5.74691Z"
+                   fill="#8391B2" />
+                 <path
+                   d="M8 0C3.58171 0 0 3.58171 0 8C0 12.4183 3.58171 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58171 12.4183 0 8 0ZM12.3818 13.8952H3.61837C2.78572 13.8952 2.10496 13.2789 2.10496 12.3821V3.61821C2.10496 2.72106 2.78572 2.10496 3.61837 2.10496H12.3818C13.2143 2.10496 13.8952 2.72106 13.8952 3.61821V12.3821C13.8952 13.2789 13.2141 13.8952 12.3818 13.8952Z"
+                   fill="#8391B2" />
+               </svg>
+
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 0.456665C4.92485 0.456665 0 5.35305 0 11.3931C0 17.4331 4.92485 22.3295 11 22.3295C17.0752 22.3295 22 17.4331 22 11.3931C22 5.35305 17.0752 0.456665 11 0.456665ZM15.1965 6.02613L13.6751 6.0268C12.482 6.0268 12.2514 6.59046 12.2514 7.41748V9.24115H15.0964L15.095 12.0975H12.2516V19.4275H9.28411V12.0975H6.80346V9.24115H9.28411V7.13465C9.28411 4.69004 10.7864 3.35865 12.9797 3.35865L15.1968 3.362V6.02613H15.1965Z"
+                    fill="#8391B2" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 0.456665C4.92485 0.456665 0 5.35305 0 11.3931C0 17.4331 4.92485 22.3295 11 22.3295C17.0752 22.3295 22 17.4331 22 11.3931C22 5.35305 17.0752 0.456665 11 0.456665ZM17.6518 8.47655C17.6569 8.60567 17.6596 8.735 17.6596 8.86501C17.6596 13.5367 14.0841 18.3689 8.1005 18.3689C6.27141 18.3689 4.49048 17.85 2.95036 16.8679C2.91818 16.8475 2.9049 16.8079 2.91773 16.7723C2.93056 16.737 2.96679 16.7151 3.00393 16.7193C3.2623 16.75 3.52653 16.7652 3.78873 16.7652C5.21181 16.7652 6.55904 16.3277 7.69854 15.4978C6.33262 15.3832 5.15869 14.4642 4.73647 13.1532C4.72769 13.1259 4.73399 13.0961 4.7529 13.0747C4.77203 13.0532 4.80129 13.0438 4.8292 13.0489C5.20775 13.1203 5.59261 13.125 5.96352 13.065C4.55484 12.6298 3.56479 11.3179 3.56479 9.82428L3.56524 9.78087C3.56591 9.75245 3.58144 9.72649 3.6062 9.7124C3.63073 9.69808 3.66134 9.69785 3.6861 9.71173C4.0534 9.91446 4.45987 10.0447 4.87691 10.0946C4.06736 9.45306 3.59202 8.48058 3.59202 7.44031C3.59202 6.84018 3.75182 6.25034 4.0543 5.73456C4.06781 5.71152 4.09166 5.69675 4.11822 5.69473C4.145 5.69205 4.17089 5.70368 4.18776 5.72427C5.84469 7.74485 8.2819 8.98897 10.8881 9.14896C10.8447 8.93147 10.8226 8.70725 10.8226 8.48103C10.8226 6.61015 12.3535 5.08834 14.2351 5.08834C15.1601 5.08834 16.054 5.46627 16.6948 6.12682C17.417 5.98048 18.105 5.71644 18.7406 5.34186C18.7697 5.32463 18.8061 5.32731 18.8329 5.34812C18.859 5.36916 18.8698 5.40407 18.8595 5.43629C18.6441 6.10601 18.2241 6.69025 17.6599 7.11205C18.1912 7.02008 18.7069 6.86479 19.1973 6.64841C19.2301 6.63342 19.2691 6.64282 19.2927 6.67034C19.3161 6.69809 19.3181 6.73769 19.2979 6.76768C18.8511 7.43248 18.2975 8.00732 17.6518 8.47655Z"
+                    fill="#8391B2" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__link">
+              <a href="#">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 0.456665C4.92507 0.456665 0 5.35305 0 11.3931C0 17.4331 4.92507 22.3295 11 22.3295C17.0749 22.3295 22 17.4331 22 11.3931C22 5.35305 17.0749 0.456665 11 0.456665ZM16.5798 12.5759C17.0925 13.0738 17.6349 13.5423 18.0951 14.0917C18.299 14.3347 18.4913 14.586 18.6375 14.8686C18.8464 15.2716 18.6578 15.7135 18.295 15.7374L16.0414 15.737C15.4594 15.7849 14.9962 15.5515 14.6058 15.1559C14.294 14.8406 14.0048 14.5038 13.7046 14.1778C13.5819 14.044 13.4527 13.918 13.2988 13.8189C12.9916 13.6202 12.7247 13.6811 12.5487 14.0001C12.3693 14.3248 12.3283 14.6846 12.3112 15.046C12.2867 15.5743 12.1264 15.7124 11.5933 15.7372C10.454 15.7902 9.37301 15.6184 8.36833 15.0474C7.48203 14.5437 6.79603 13.8328 6.19826 13.0279C5.03423 11.4589 4.14275 9.73679 3.34175 7.96526C3.16147 7.56629 3.29336 7.35282 3.73606 7.34454C4.47157 7.33044 5.20708 7.33223 5.94259 7.34387C6.24192 7.34857 6.43998 7.51885 6.55499 7.79967C6.95245 8.77192 7.43971 9.69696 8.05031 10.5549C8.21303 10.7833 8.37913 11.0111 8.61567 11.1725C8.87675 11.3506 9.0757 11.2917 9.19881 11.0019C9.27759 10.8178 9.31157 10.6209 9.32868 10.4235C9.38719 9.74753 9.39417 9.07176 9.29289 8.39846C9.22987 7.97712 8.99153 7.70502 8.56908 7.62536C8.35392 7.58486 8.38543 7.50565 8.49009 7.38347C8.67171 7.17224 8.84186 7.04156 9.18193 7.04156L11.7281 7.04112C12.1294 7.11943 12.2194 7.29844 12.2739 7.70032L12.2761 10.5135C12.2714 10.669 12.3547 11.1299 12.6355 11.2317C12.8606 11.3056 13.0091 11.1261 13.1437 10.9845C13.7543 10.3403 14.1894 9.57993 14.579 8.79296C14.7509 8.4459 14.8992 8.08676 15.0433 7.72695C15.1504 7.4609 15.317 7.32999 15.619 7.33447L18.0708 7.33738C18.1431 7.33738 18.2164 7.33805 18.288 7.35036C18.7012 7.42062 18.8144 7.59739 18.6866 7.99815C18.4854 8.62782 18.0945 9.15232 17.7123 9.67816C17.3027 10.2411 16.8658 10.7844 16.4603 11.3499C16.0876 11.8668 16.1171 12.127 16.5798 12.5759Z"
+                    fill="#8391B2" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Серверы</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Облако</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Оборудование</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Решения</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Дата-центры</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">О компании</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Блог</a></li>
+          <li class="footer__item"><a class="footer__a" href="https://selectel.ru/">Офисы</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
